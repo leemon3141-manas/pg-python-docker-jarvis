@@ -4,7 +4,7 @@ from faker import Faker
 fake = Faker()
 
 conn = psycopg.connect(
-    host="localhost",
+    host="host.docker.internal",
     port=5432,
     dbname="testdb",
     user="postgres",
